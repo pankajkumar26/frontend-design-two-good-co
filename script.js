@@ -82,8 +82,9 @@ function videoContainerAnimation() {
   });
   videoContainer.addEventListener("mousemove", function (dets) {
     gsap.to(playBtnCursor, {
-      left: dets.x - 70,
-      top: dets.y - 80,
+      left: dets.x,
+      top: dets.y,
+      transform: "translate(-50%,-50%)"
     });
   });
 }
